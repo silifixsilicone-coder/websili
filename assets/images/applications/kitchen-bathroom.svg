@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <defs>
+    <linearGradient id="kbBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#230345"/>
+      <stop offset="60%" stop-color="#31065E"/>
+      <stop offset="100%" stop-color="#52119B"/>
+    </linearGradient>
+    <linearGradient id="tileGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F8F4FC"/>
+      <stop offset="100%" stop-color="#EDE0FA"/>
+    </linearGradient>
+    <linearGradient id="countertop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1F2937"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+    <linearGradient id="waterDroplet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C026D3"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#kbBg)"/>
+
+  <!-- Subway Tiles Wall (Upper half) -->
+  <g transform="translate(40, 30)">
+    <!-- Row 1 -->
+    <rect x="0" y="0" width="100" height="45" rx="3" fill="url(#tileGradient)" stroke="#D8B4FE" stroke-width="2"/>
+    <rect x="105" y="0" width="100" height="45" rx="3" fill="url(#tileGradient)" stroke="#D8B4FE" stroke-width="2"/>
+    <rect x="210" y="0" width="100" height="45" rx="3" fill="url(#tileGradient)" stroke="#D8B4FE" stroke-width="2"/>
+    <rect x="315" y="0" width="100" height="45" rx="3" fill="url(#tileGradient)" stroke="#D8B4FE" stroke-width="2"/>
+    <rect x="420" y="0" width="100" height="45" rx="3" fill="url(#tileGradient)" stroke="#D8B4FE" stroke-width="2"/>
+
+    <!-- Row 2 (offset) -->
+    <rect x="-50" y="49" width="100" height="45" rx="3" fill="url(#tileGradient)" stroke="#D8B4FE" stroke-width="2"/>
+    <rect x="55" y="49" width="100" height="45" rx="3" fill="url(#tileGradient)" stroke="#D8B4FE" stroke-width="2"/>
+    <rect x="160" y="49" width="100" height="45" rx="3" fill="url(#tileGradient)" stroke="#D8B4FE" stroke-width="2"/>
+    <rect x="265" y="49" width="100" height="45" rx="3" fill="url(#tileGradient)" stroke="#D8B4FE" stroke-width="2"/>
+    <rect x="370" y="49" width="100" height="45" rx="3" fill="url(#tileGradient)" stroke="#D8B4FE" stroke-width="2"/>
+    <rect x="475" y="49" width="100" height="45" rx="3" fill="url(#tileGradient)" stroke="#D8B4FE" stroke-width="2"/>
+
+    <!-- Row 3 -->
+    <rect x="0" y="98" width="100" height="45" rx="3" fill="url(#tileGradient)" stroke="#D8B4FE" stroke-width="2"/>
+    <rect x="105" y="98" width="100" height="45" rx="3" fill="url(#tileGradient)" stroke="#D8B4FE" stroke-width="2"/>
+    <rect x="210" y="98" width="100" height="45" rx="3" fill="url(#tileGradient)" stroke="#D8B4FE" stroke-width="2"/>
+    <rect x="315" y="98" width="100" height="45" rx="3" fill="url(#tileGradient)" stroke="#D8B4FE" stroke-width="2"/>
+    <rect x="420" y="98" width="100" height="45" rx="3" fill="url(#tileGradient)" stroke="#D8B4FE" stroke-width="2"/>
+  </g>
+
+  <!-- Granite Countertop (Lower half) -->
+  <rect x="40" y="175" width="520" height="180" rx="6" fill="url(#countertop)" stroke="#374151" stroke-width="2"/>
+  
+  <!-- Countertop Highlight Polish line -->
+  <line x1="42" y1="178" x2="558" y2="178" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2"/>
+
+  <!-- Critical Joint: WELFIX Waterproof Silicone Seal Bead connecting wall & counter -->
+  <rect x="40" y="170" width="520" height="8" rx="4" fill="#C026D3"/>
+  <line x1="42" y1="174" x2="558" y2="174" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.8"/>
+
+  <!-- Undermount Luxury Basin Rim -->
+  <ellipse cx="280" cy="260" rx="150" ry="60" fill="#111827" stroke="#4B5563" stroke-width="4"/>
+  <ellipse cx="280" cy="260" rx="146" ry="56" fill="#F8F4FC"/>
+  <!-- Basin interior depth -->
+  <ellipse cx="280" cy="268" rx="120" ry="40" fill="#EDE0FA"/>
+  <circle cx="280" cy="272" r="14" fill="#9CA3AF"/>
+  <circle cx="280" cy="272" r="10" fill="#4B5563"/>
+
+  <!-- Sink Rim Waterproof Seal Bead -->
+  <ellipse cx="280" cy="260" rx="148" ry="58" fill="none" stroke="#C026D3" stroke-width="3.5"/>
+
+  <!-- Modern Faucet Silhouette -->
+  <path d="M280 200 C280 140, 240 130, 235 150" stroke="#E5E7EB" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <circle cx="280" cy="202" r="8" fill="#9CA3AF"/>
+
+  <!-- Overlay Badge -->
+  <g transform="translate(370, 280)">
+    <rect width="180" height="50" rx="8" fill="#FFFFFF" opacity="0.95"/>
+    <circle cx="25" cy="25" r="14" fill="#F2E8FC"/>
+    <path d="M19 25L23 29L31 20" stroke="#C026D3" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="48" y="21" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="11" fill="#31065E">100% Waterproof</text>
+    <text x="48" y="36" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="600" font-size="9" fill="#52119B">Sanitary &amp; Moisture Safe</text>
+  </g>
+</svg>

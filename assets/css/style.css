@@ -1,0 +1,245 @@
+/* ==========================================================================
+   WELFIX SOLUTIONS — BRAND STYLESHEET
+   Brand Colors:
+   Primary Purple: #52119B
+   Deep Purple:    #31065E
+   Dark Violet:    #3D087B
+   Magenta:        #C026D3
+   Light Purple:   #F2E8FC
+   Lavender:       #F8F4FC
+   White:          #FFFFFF
+   Dark Text:      #171321
+   ========================================================================== */
+
+:root {
+  --color-primary: #52119B;
+  --color-deep: #31065E;
+  --color-violet: #3D087B;
+  --color-magenta: #C026D3;
+  --color-magenta-hover: #A21CAF;
+  --color-light-purple: #F2E8FC;
+  --color-lavender: #F8F4FC;
+  --color-white: #FFFFFF;
+  --color-text: #171321;
+  --color-text-muted: #595366;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Base Configuration */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background-color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Gradients */
+.gradient-purple-hero {
+  background: linear-gradient(135deg, #240346 0%, #31065E 30%, #3D087B 65%, #52119B 100%);
+}
+
+.gradient-purple-card {
+  background: linear-gradient(135deg, #31065E 0%, #52119B 100%);
+}
+
+.gradient-magenta-badge {
+  background: linear-gradient(135deg, #C026D3 0%, #E879F9 100%);
+}
+
+.gradient-light-section {
+  background: linear-gradient(180deg, #F8F4FC 0%, #FFFFFF 100%);
+}
+
+.gradient-lavender-mesh {
+  background-color: #F8F4FC;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(242, 232, 252, 0.8) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(192, 38, 211, 0.08) 0px, transparent 50%);
+}
+
+/* Glowing Shadows */
+.shadow-purple-sm {
+  box-shadow: 0 4px 12px rgba(82, 17, 155, 0.08);
+}
+
+.shadow-purple-md {
+  box-shadow: 0 10px 25px -4px rgba(82, 17, 155, 0.12), 0 4px 8px -2px rgba(82, 17, 155, 0.06);
+}
+
+.shadow-purple-lg {
+  box-shadow: 0 20px 35px -8px rgba(82, 17, 155, 0.18), 0 8px 16px -4px rgba(82, 17, 155, 0.08);
+}
+
+.shadow-purple-xl {
+  box-shadow: 0 25px 50px -12px rgba(49, 6, 94, 0.35);
+}
+
+.shadow-magenta-glow {
+  box-shadow: 0 8px 24px -2px rgba(192, 38, 211, 0.4);
+}
+
+/* Interactive Product Cards */
+.product-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(82, 17, 155, 0.1);
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 40px -10px rgba(82, 17, 155, 0.22);
+  border-color: rgba(192, 38, 211, 0.45);
+}
+
+/* Sticky Navbar Blur */
+.nav-scrolled {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(49, 6, 94, 0.08);
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #52119B 0%, #3D087B 100%);
+  color: #FFFFFF;
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #C026D3 0%, #52119B 100%);
+  box-shadow: 0 10px 25px -5px rgba(192, 38, 211, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: #FFFFFF;
+  color: #31065E;
+  border: 1.5px solid #52119B;
+  transition: all 0.25s ease;
+}
+
+.btn-secondary:hover {
+  background: #F2E8FC;
+  color: #31065E;
+  border-color: #C026D3;
+  transform: translateY(-2px);
+}
+
+.btn-magenta {
+  background: linear-gradient(135deg, #C026D3 0%, #A21CAF 100%);
+  color: #FFFFFF;
+  transition: all 0.25s ease;
+}
+
+.btn-magenta:hover {
+  background: linear-gradient(135deg, #D946EF 0%, #C026D3 100%);
+  box-shadow: 0 10px 25px -5px rgba(192, 38, 211, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-floating {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.whatsapp-floating:hover {
+  transform: scale(1.1) rotate(6deg);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-pulse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #25D366;
+  opacity: 0.7;
+  animation: waPulse 2s infinite ease-out;
+  z-index: -1;
+}
+
+@keyframes waPulse {
+  0% { transform: scale(1); opacity: 0.7; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* Subtle Hero Floating Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(1deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Scroll Reveal Elements */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays */
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F4FC;
+}
+::-webkit-scrollbar-thumb {
+  background: #52119B;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #31065E;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .animate-float, .whatsapp-pulse {
+    animation: none !important;
+  }
+}

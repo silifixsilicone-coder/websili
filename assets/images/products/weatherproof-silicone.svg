@@ -1,0 +1,86 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" fill="none">
+  <defs>
+    <radialGradient id="wpGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F2E8FC" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#F8F4FC" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="wpBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#230345"/>
+      <stop offset="25%" stop-color="#3D087B"/>
+      <stop offset="60%" stop-color="#52119B"/>
+      <stop offset="85%" stop-color="#31065E"/>
+      <stop offset="100%" stop-color="#1A022B"/>
+    </linearGradient>
+
+    <linearGradient id="placeholderStripes" x1="0" y1="0" x2="20" y2="20" gradientUnits="userSpaceOnUse">
+      <path d="M0 20L20 0M0 0L20 20" stroke="#52119B" stroke-width="1.5" stroke-opacity="0.08"/>
+    </linearGradient>
+
+    <filter id="wpDropShadow" x="-20%" y="-10%" width="140%" height="130%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#31065E" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <ellipse cx="250" cy="380" rx="200" ry="240" fill="url(#wpGlow)"/>
+  <ellipse cx="250" cy="650" rx="100" ry="16" fill="#31065E" opacity="0.15" filter="blur(6px)"/>
+
+  <!-- Cartridge Form -->
+  <g filter="url(#wpDropShadow)">
+    <!-- Base -->
+    <rect x="185" y="580" width="130" height="15" rx="3" fill="#6B7280"/>
+    <ellipse cx="250" cy="595" rx="65" ry="7" fill="#4B5563"/>
+
+    <!-- Cylinder -->
+    <rect x="185" y="210" width="130" height="370" rx="4" fill="url(#wpBody)"/>
+    <rect x="238" y="210" width="18" height="370" fill="#FFFFFF" opacity="0.18"/>
+
+    <!-- Shoulder & Collar -->
+    <path d="M185 210 C185 190, 215 180, 238 178 L262 178 C285 180, 315 190, 315 210 Z" fill="url(#wpBody)"/>
+    <rect x="240" y="158" width="20" height="20" rx="2" fill="#9CA3AF"/>
+
+    <!-- Nozzle -->
+    <path d="M241 160 L247 60 L253 60 L259 160 Z" fill="#E5E7EB"/>
+
+    <!-- Inner Card Placeholder Surface -->
+    <rect x="193" y="240" width="114" height="310" rx="4" fill="#FFFFFF"/>
+    <rect x="193" y="240" width="114" height="310" rx="4" fill="url(#placeholderStripes)"/>
+
+    <!-- Content inside placeholder -->
+    <g transform="translate(250, 275)" text-anchor="middle">
+      <text y="0" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="18" fill="#31065E">WEL<tspan fill="#C026D3">FIX</tspan></text>
+      <text y="14" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="6.5" fill="#52119B" letter-spacing="2">SOLUTIONS</text>
+      
+      <rect x="-46" y="30" width="92" height="2" fill="#C026D3"/>
+
+      <text y="50" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="8.5" fill="#31065E">WEATHERPROOF</text>
+      <text y="62" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="7" fill="#52119B">SILICONE SEALANT</text>
+
+      <!-- Camera placeholder icon -->
+      <g transform="translate(-18, 90)">
+        <rect x="0" y="4" width="36" height="28" rx="4" stroke="#52119B" stroke-width="2" fill="#F2E8FC"/>
+        <path d="M11 4 L14 0 L22 0 L25 4 Z" fill="#52119B"/>
+        <circle cx="18" cy="18" r="7" stroke="#52119B" stroke-width="2" fill="#FFFFFF"/>
+        <circle cx="18" cy="18" r="3" fill="#C026D3"/>
+      </g>
+
+      <text y="145" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="7.5" fill="#3D087B">OFFICIAL PRODUCT</text>
+      <text y="156" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="7.5" fill="#3D087B">PHOTO COMING SOON</text>
+
+      <rect x="-46" y="172" width="92" height="22" rx="4" fill="#F2E8FC"/>
+      <text y="186" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="6.5" fill="#52119B">Contact for Specifications</text>
+
+      <text y="240" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="600" font-size="5.5" fill="#6B7280">Manufactured by Welfix</text>
+      <text y="250" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="600" font-size="5.5" fill="#6B7280">Marketed by Welfix Solutions</text>
+    </g>
+  </g>
+
+  <!-- Floating Badge -->
+  <g transform="translate(320, 240)">
+    <rect x="0" y="0" width="150" height="52" rx="8" fill="#31065E" filter="url(#wpDropShadow)"/>
+    <text x="75" y="22" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="8" fill="#E879F9" text-anchor="middle" letter-spacing="1">AUTHENTIC LISTING</text>
+    <text x="75" y="38" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="9" fill="#FFFFFF" text-anchor="middle">Placeholder Card</text>
+  </g>
+</svg>
